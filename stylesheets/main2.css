@@ -97,7 +97,7 @@ html, body {
     cursor: pointer;
     display: flex;
     align-items: center;
-    padding: 10px 10px;
+    margin: 10px 10px;
 }
 
 .fa-angle-down {
