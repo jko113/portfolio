@@ -10,12 +10,10 @@ $(document).ready(function() {
     $hamburger.on("click", (event) => {
         $nav = $(".header-nav");
         event.preventDefault();
-        if ($nav.css("display") === "none") {
-            $nav.css({
-                display: "flex"
-            });
+        if ($nav.hasClass("hidden")) {
+            $nav.removeClass("hidden");
         } else {
-            $nav.css({display: "none"});
+            $nav.addClass("hidden");
         }
     });
 });
