@@ -54,7 +54,6 @@ html, body {
 }
 
 .header-container-big {
-    display: none;
     padding: 20px 50px 0 20px;
 }
 
@@ -71,23 +70,28 @@ html, body {
     font-size: 1.2rem;
 }
 
-.header-nav, .header-nav-vertical {
+.header-nav {
     font-family: "Open-Sans", sans-serif;
     text-transform: uppercase;
     font-size: .8rem;
-    display: flex;
+    display: none;
     justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    top: 50px;
+    right: 10px;
 }
 
-.header-nav-vertical {
-    flex-direction: column;
+.header-nav a {
+    text-decoration: none;
+    color: rgb(28,28,28);
 }
 
 .header-nav-item {
     cursor: pointer;
     display: flex;
     align-items: center;
-    padding: 0 10px;
+    padding: 10px 10px;
 }
 
 .fa-angle-down {
@@ -97,7 +101,7 @@ html, body {
 .header-contact {
     font-family: "Open-Sans", sans-serif;
     font-size: .8rem;
-    display: flex;
+    display: none;
     justify-content: center;
     text-transform: uppercase;
     padding: 10px 20px;
@@ -152,19 +156,24 @@ html, body {
         background-image: url(../images/stairs_600.jpg);
     }
 
-    .header-container-mobile {
-        display: none;
-    }
-
-    .header-container-big {
+    .header-nav, .header-contact {
         display: flex;
+        position: static;
+        flex-direction: row;
     }
+    
+    .fa-bars {
+        display: none
+    }
+    
 }
 
 @media all and (min-width: 768px) { 
     .stairs {
         background-image: url(../images/stairs_768.jpg);
     }
+
+
 }
 
 @media all and (min-width: 980px) { 

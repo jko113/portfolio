@@ -8,34 +8,36 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <link rel="stylesheet" href="stylesheets/jquery.fullpage.css">
     <link rel="stylesheet" href="stylesheets/main2.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="scripts/jquery.fullpage.js"></script>
     <title>Portfolio</title>
 </head>
 <body>
-        <div class="stairs">
+    <div id="fullpage">
+        <div class="section stairs">
 
             <div class="header-container-big">
                 <div class="header-logo darkgray">Design With Verve</div>
-                <div class="header-nav">
-                    <div class="header-nav-item">About<i class="fa fa-angle-down classic-red"></i></div>
-                    <div class="header-nav-item">Projects<i class="fa fa-angle-down classic-red"></i></div>
-                    <div class="header-nav-item">Resume<i class="fa fa-angle-down classic-red"></i></div>
+                <div class="header-nav-wrapper">
+                    <div class="header-nav">
+                        <div class="header-nav-item">
+                            <a href="#secondPage" data-menuanchor="secondPage">
+                                About
+                            </a>
+                        </div>
+                        <div class="header-nav-item">
+                            <a href="#thirdPage" data-menuanchor="thirdPage">
+                                Projects
+                            </a>
+                        </div>
+                        <div class="header-nav-item">
+                            <a href="#fourthPage" data-menuanchor="fourthPage">
+                                Resume
+                            </a>
+                        </div>
+                    </div>
+                    <i data-hamburger-icon class="fas fa-bars">
+                    </i>
                 </div>
                 <div class="header-contact classic-red-background whitish">Get in Touch</div>
-            </div>
-
-            <div data-hamburger class="header-container-mobile">
-                <div class="header-logo darkgray">Design With Verve</div>
-                <div class="hamburger">
-                    <i data-hamburger-icon class="fas fa-bars"></i>
-                    <div data-vertical-nav class="header-nav-vertical">
-                        <div class="header-nav-item">About</div>
-                        <div class="header-nav-item">Projects</div>
-                        <div class="header-nav-item">Resume</div>
-                        <div class="header-nav-item">Contact</div>
-                    </div>
-                </div>
             </div>
 
             <div class="intro darkgray">
@@ -45,19 +47,19 @@
                 <div class="intro-low">Nice to meet you!</div>
             </div>   
         </div>
-        <div class="about">
+        <div class="section about">
             <div class="section-header">
                 About
             </div>
             <div class="section-text">Joshua has a diverse professional background, with experience in foodservice, publishing, distribution logistics, events planning, international relations, nonprofits, and youth mentorship. Feel free to check out his LinkedIn profile for a more comprehensive summary. After more than two years in tech support at an Atlanta software company, in April 2018 Joshua formally transitioned into the world of software development, embarking on a 16-week full-stack immersive course at DigitalCrafts in Buckhead. The applied, hands-on knowledge gained from the intensive program supplements his academic studies in computer science at Kennesaw State University, from which he holds a graduate certificate in software engineering foundations. In his free time, Joshua enjoys learning foreign languages, watching films, jogging and hiking, eating good food, and hanging out with his kind wife and their crazy kitty.</div>
         </div>
-        <div class="projects">
+        <div class="section projects">
             <div class="section-header">Projects</div>
             <div class="section-text">
             Joshua has a diverse professional background, with experience in foodservice, publishing, distribution logistics, events planning, international relations, nonprofits, and youth mentorship. Feel free to check out his LinkedIn profile for a more comprehensive summary. After more than two years in tech support at an Atlanta software company, in April 2018 Joshua formally transitioned into the world of software development, embarking on a 16-week full-stack immersive course at DigitalCrafts in Buckhead. The applied, hands-on knowledge gained from the intensive program supplements his academic studies in computer science at Kennesaw State University, from which he holds a graduate certificate in software engineering foundations. In his free time, Joshua enjoys learning foreign languages, watching films, jogging and hiking, eating good food, and hanging out with his kind wife and their crazy kitty.
             </div>
         </div>
-        <div class="resume">
+        <div class="section resume">
             <div class="section-header">Resume</div>
             <div class="section-text">
             Joshua has a diverse professional background, with experience in foodservice, publishing, distribution logistics, events planning, international relations, nonprofits, and youth mentorship. Feel free to check out his LinkedIn profile for a more comprehensive summary. After more than two years in tech support at an Atlanta software company, in April 2018 Joshua formally transitioned into the world of software development, embarking on a 16-week full-stack immersive course at DigitalCrafts in Buckhead. The applied, hands-on knowledge gained from the intensive program supplements his academic studies in computer science at Kennesaw State University, from which he holds a graduate certificate in software engineering foundations. In his free time, Joshua enjoys learning foreign languages, watching films, jogging and hiking, eating good food, and hanging out with his kind wife and their crazy kitty.
@@ -68,8 +70,10 @@
                 <div class="section-header">Contact</div>
             </div>
         </footer>
+    </div>
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="scripts/jquery.fullpage.js"></script>
     <script src="scripts/main.js"></script>
 </body>
 </html>

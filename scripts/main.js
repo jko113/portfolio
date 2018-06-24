@@ -1,21 +1,21 @@
+
+
 $(document).ready(function() {
-	$('#fullpage').fullpage({
-        anchors:['firstPage', 'secondPage', 'thirdPage']
+	$("#fullpage").fullpage({
+        anchors:["firstPage", "secondPage", "thirdPage", "fourthPage"]
     });
 
-    var hamburger = document.querySelector("[data-hamburger]");
-    hamburger.addEventListener("click", (event) => {
-        event.preventDefault();
-    });
 
     var $hamburger = $("[data-hamburger-icon]");
     $hamburger.on("click", (event) => {
-        $verticalNav = $("[data-vertical-nav]");
+        $nav = $(".header-nav");
         event.preventDefault();
-        if ($verticalNav.hasClass("hidden")) {
-            $verticalNav.removeClass("hidden");
+        if ($nav.css("display") === "none") {
+            $nav.css({
+                display: "flex"
+            });
         } else {
-            $verticalNav.addClass("hidden");
+            $nav.css({display: "none"});
         }
     });
 });
