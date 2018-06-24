@@ -40,8 +40,8 @@ html, body {
     height: 100%;
 }
 
-.header-container-mobile, .header-container-big {
-    position: absolute;
+.header-container-big {
+    position: fixed;
     top: 0;
     bottom: 0;
     left: 0;
@@ -51,6 +51,7 @@ html, body {
     height: 50px;
     justify-content: space-between;
     align-items: center;
+    z-index: 1000000;
 }
 
 .header-container-big {
@@ -82,9 +83,14 @@ html, body {
     right: 10px;
 }
 
-.header-nav a {
+.header-nav a, .header-logo a {
     text-decoration: none;
     color: rgb(28,28,28);
+}
+
+.header-contact a {
+    text-decoration: none;
+    color: rgb(207,207,207);
 }
 
 .header-nav-item {
@@ -160,6 +166,10 @@ html, body {
         display: flex;
         position: static;
         flex-direction: row;
+    }
+
+    .header-nav-item-contact {
+        display: none;
     }
     
     .fa-bars {
