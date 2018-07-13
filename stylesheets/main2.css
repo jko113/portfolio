@@ -1,3 +1,17 @@
+.app-margin {
+    margin: 20px;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
 html {
     box-sizing: border-box;
     font-size: 12px;
@@ -18,6 +32,14 @@ html, body {
     color: rgb(28,28,28);
 }
 
+.primary-color {
+    color: #3bbfa7;
+}
+
+.primary-color-bg {
+    background-color: #3bbfa7;
+}
+
 .classic-red {
     color: rgb(175,17,0);
 }
@@ -26,13 +48,17 @@ html, body {
     background-color: rgb(175,17,0);
 }
 
+.white {
+    color: #ffffff;
+}
+
 .whitish {
     color: rgb(207,207,207);
 }
 
 .stairs {
     position: relative;
-    background-image: url(../images/stairs_360.jpg);
+    background-image: url(../images/background.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -84,12 +110,12 @@ html, body {
 
 .header-nav a, .header-logo a {
     text-decoration: none;
-    color: rgb(28,28,28);
+    color: #3bbfa7;
 }
 
 .header-contact a {
     text-decoration: none;
-    color: rgb(207,207,207);
+    color: #ffffff;
 }
 
 .header-nav-item {
@@ -114,7 +140,7 @@ html, body {
 }
 
 .intro {
-    font-family: 'Noto Serif', serif;
+    font-family: "Open-Sans", sans-serif;
     position: absolute;
     text-align: center;
     top: 40%;
@@ -125,13 +151,14 @@ html, body {
 .intro-top {
     font-size: .8rem;
     padding-bottom: 10px;
-    font-family: "Open-Sans", sans-serif;
     text-transform: uppercase;
 }
 
 .intro-mid {
+    font-family: 'Archivo Black', sans-serif;
     font-size: 3.5rem;
     padding-bottom: 10px;
+    letter-spacing: 0.2rem;
 }
 
 .intro-low {
@@ -142,23 +169,58 @@ html, body {
     display: none;
 }
 
-.about {
-    text-align: justify;
+.section {
+    /* text-align: justify; */
 }
 
-.about-text {
-    padding: 100px;
+.section-container {
+    font-family: 'Open-Sans', sans-serif;
+    margin: 0 50px;
+    border-top: 1px solid rgb(28, 28, 28);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
+
+.about {
+    border-top: 1px solid rgb(28, 28, 28);
+}
+
+.projects {
+    /* border-top: 1px solid rgb(28, 28, 28); */
+}
+
+.p-logo {
+    font-size: 4rem;
+    color: #3bbfa7;
+    margin-bottom: 20px;
+}
+
+/* .about-text {
+    padding: 100px;
+} */
 
 .section-header {
-    font-size: 3rem;
-    padding: 50px 0 0 0;
+    font-size: 5rem;
     text-align: center;
+    font-family: 'Archivo Black', sans-serif;
+    letter-spacing: 0.2rem;
 }
+
+.section-wrapper {
+    padding: 30px 100px 0 100px;
+}
+
+.section-content {
+    padding: 30px;
+    background-color: #F2F2F2;
+} 
 
 @media all and (min-width: 600px) { 
     .stairs {
-        background-image: url(../images/stairs_600.jpg);
+        background-image: url(../images/background.jpg);
     }
 
     .header-nav, .header-contact {
@@ -183,7 +245,7 @@ html, body {
 
 @media all and (min-width: 768px) { 
     .stairs {
-        background-image: url(../images/stairs_768.jpg);
+        background-image: url(../images/background.jpg);
     }
 
 
@@ -191,19 +253,27 @@ html, body {
 
 @media all and (min-width: 980px) { 
     .stairs {
-        background-image: url(../images/stairs_980.jpg);
+        background-image: url(../images/background.jpg);
     }
 }
 
 
 @media all and (min-width: 1280px) { 
     .stairs {
-        background-image: url(../images/stairs_1280.jpg);
+        background-image: url(../images/background.jpg);
     }
 }
 
 @media all and (min-width: 1690px) {
     .stairs {
-        background-image: url(../images/stairs_1690.jpg);
+        background-image: url(../images/background.jpg);
     }
 }
+
+/*
+#6EA864 green
+#EFBB5A yellow
+#F2F2F2 gray
+#F5DCDF pinkish
+#90BABA teal
+*/
