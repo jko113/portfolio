@@ -1,9 +1,9 @@
 
 
 $(document).ready(function() {
-	$("#fullpage").fullpage({
-        anchors:["firstPage", "secondPage", "thirdPage", "fourthPage", "fifthPage"]
-    });
+	// $("#fullpage").fullpage({
+    //     anchors:["firstPage", "secondPage", "thirdPage", "fourthPage", "fifthPage"]
+    // });
 
 
     var $hamburger = $("[data-hamburger-icon]");
