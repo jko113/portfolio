@@ -4,42 +4,164 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css?family=Noto+Serif|Pacifico|Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Archivo+Black|Noto+Serif|Pacifico|Open+Sans" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <link rel="stylesheet" href="stylesheets/main.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <title>Portfolio</title>
 </head>
 <body>
-    <div class="stairs">
-
-        <div class="header-container-big">
-            <div class="header-logo darkgray">Design With Verve</div>
-            <div class="header-nav">
-                <div class="header-nav-item">About<i class="fa fa-angle-down classic-red"></i></div>
-                <div class="header-nav-item">Projects<i class="fa fa-angle-down classic-red"></i></div>
-                <div class="header-nav-item">Resume<i class="fa fa-angle-down classic-red"></i></div>
-            </div>
-            <div class="header-contact classic-red-background whitish">Get in Touch</div>
+    <div class="header-container-big">
+        <div class="header-logo">
+            <a href="#home">
+                Built With Verve
+            </a>
         </div>
-
-        <div class="header-container-mobile">
-            <div class="header-logo darkgray">Design With Verve</div>
-            <div class="header-nav">
-                <div class="header-nav-item">About<i class="fa fa-angle-down classic-red"></i></div>
-                <div class="header-nav-item">Projects<i class="fa fa-angle-down classic-red"></i></div>
-                <div class="header-nav-item">Resume<i class="fa fa-angle-down classic-red"></i></div>
+        <div class="header-nav-wrapper">
+            <div class="header-nav hidden">
+                <div class="header-nav-item">
+                    <a href="#about">
+                        About
+                    </a>
+                </div>
+                <div class="header-nav-item">
+                    <a href="#projects">
+                        Projects
+                    </a>
+                </div>
+                <div class="header-nav-item">
+                    <a href="#skills">
+                        Skills
+                    </a>
+                </div>
+                <div class="header-nav-item header-nav-item-contact">
+                    <a href="#contact">
+                        Contact
+                    </a>
+                </div>
             </div>
-            <div class="header-contact classic-red-background whitish">Get in Touch</div>
+            <i data-hamburger-icon class="fas fa-bars"></i>
         </div>
-
-        <div class="intro darkgray">
-            <div class="intro-top">Software Engineer</div>
-            <div class="intro-mid">Joshua Owens</div>
-            <div class="intro-low">I'm a full-stack web developer/UX designer</div>
-            <div class="intro-low">Nice to meet you!</div>
-        </div>   
+        <a class="header-contact-link" href="#contact">
+            <div class="header-contact primary-color-bg">
+                    Get in Touch
+            </div>
+        </a>
     </div>
-       
+    <div id="fullpage">
+        <div class="stairs flex-center" id="home"> 
+            <div class="intro white">
+                <div class="intro-top">Software Engineer</div>
+                <div class="intro-mid">Joshua Owens</div>
+                <div class="intro-low">I enjoy building things that make the world a better place</div>
+                <div class="intro-low">Nice to meet you!</div>
+            </div>   
+        </div>
+        <div class="section about" id="about">
+            <div class="section-header">
+                About
+            </div>
+            <div class="section-wrapper">
+                <div class="section-content">
+                    Joshua has a diverse professional background, with experience in technical support, publishing, distribution logistics, events planning, international relations, nonprofits, foodservice, and youth mentorship. Feel free to check out his <a href="https://www.linkedin.com/in/jko113/">LinkedIn</a> profile for a more comprehensive summary. After more than two years in technical roles of increasing responsibility at a software company in Midtown Atlanta, in April 2018 Joshua formally transitioned into the exciting world of software development, embarking on a 16-week full-stack immersive course at <a href="https://www.digitalcrafts.com/">DigitalCrafts</a> in Buckhead. The applied, hands-on knowledge gained from the intensive program supplements his academic studies in computing at Kennesaw State University, from which he holds a graduate certificate in computer science foundations.<br><br>In his free time, Joshua enjoys learning foreign languages, watching films, jogging and hiking, eating good food, and hanging out with his kind wife and their crazy kitty.
+                </div>
+            </div>
+        </div>
+        <div class="section projects" id="projects">
+            <div class="section-header">Projects</div>
+            <div class="section-wrapper">
+                <div class="flex-start p-list">
+                    <div class="flex-center flex-column app-margin flex-even">
+                        <div class="p-logo">
+                            <i class="fas fa-palette"></i>
+                        </div>
+                        <div class="p-content">Full-stack project: more information coming soon!</div>
+                    </div>
+                    <div class="flex-center flex-column app-margin flex-even">
+                        <div class="p-logo">
+                            <a target="_blank" href="https://www.github.com/jko113/c0d3r/">
+                                <i class="fas fa-hand-holding-heart"></i>
+                            </a>
+                        </div>
+                        <div class="p-content"><a target="_blank" href="https://www.github.com/jko113/c0d3r/">C0D3R</a> is a fun dating app for programmers. After logging in through GitHub authentication, users can create a profile, search for other users with a wide array of search criteria, and send and receive messages.</div>
+                    </div>
+                    <div class="flex-center flex-column app-margin flex-even">
+                        <div class="p-logo">
+                            <a target="_blank" href="https://www.github.com/jko113/repsearch/">
+                                <i class="fas fa-users"></i>
+                            </a>
+                        </div>
+                        <div class="p-content"><a target="_blank" href="https://www.github.com/jko113/repsearch/">RepSearch</a> is an application for obtaining information about elected officials in a given constituency. After entering a physical U.S. address, information about government officials at the local, state and national levels appears on-screen.</div>
+                    </div>
+                    <div class="flex-center flex-column app-margin flex-even">
+                        <div class="p-logo">
+                            <a target="_blank" href="https://www.github.com/jko113/pretty_kitty/">
+                                <i class="fas fa-smile"></i>
+                            </a>
+                        </div>
+                        <div class="p-content"><a target="_blank" href="https://www.github.com/jko113/pretty_kitty/">Pretty Kitty</a> is a Pygame application that both calms and tantalizes the feline friend. At each turn, the player has the option to pet, feed or chase the protagonist kitty, and each action provokes a reaction and leads the player closer to game's end.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section skills" id="skills">
+
+            <div class="section-header">Skills</div>
+
+            <div class="section-wrapper">
+                <div class="section-content">
+                    <div class="flex-start">
+                        <div class="s-logo flex-center flex-column app-margin">
+                            <i class="fab fa-js-square"></i>
+                            <div class="s-text">Javascript</div>
+                        </div>
+                        <div class="s-logo flex-center flex-column app-margin">
+                            <i class="fab fa-html5"></i>
+                            <div class="s-text">HTML</div>
+                        </div>
+                        <div class="s-logo flex-center flex-column app-margin">
+                            <i class="fab fa-css3-alt"></i>
+                            <div class="s-text">CSS</div>
+                        </div>
+                        <div class="s-logo flex-center flex-column app-margin">
+                            <i class="fab fa-node-js"></i>
+                            <div class="s-text">Node.js</div>
+                        </div>
+                        <div class="s-logo flex-center flex-column app-margin">
+                            <i class="fab fa-python"></i>
+                            <div class="s-text">Python</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section contact" id="contact">
+            <div class="section-header">Contact</div>
+            <div class="section-wrapper">
+                <div class="section-content flex-center">
+                    <div class="c-logo app-margin">
+                        <a target="_blank" href="https://www.github.com/jko113/">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                    <div class="c-logo app-margin">
+                        <a target="_blank" href="https://www.linkedin.com/in/jko113/">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </div>
+                    <div class="c-logo app-margin icon-link">
+                        <a href="mailto:jko113@gmail.com">
+                            <i class="fas fa-at"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer flex-center">
+            All Rights Reserved. Joshua Owens 2018
+        </div>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="scripts/main.js"></script>
 </body>
 </html>
